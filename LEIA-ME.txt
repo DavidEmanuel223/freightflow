@@ -1,0 +1,8 @@
+FREIGHTFLOW WEB 2.0
+1. Extraia o ZIP. Abra index.html para testar (internet necessária para carregar a biblioteca XLSX).
+2. Entre em github.com e crie um repositório público chamado freightflow.
+3. Em Add file > Upload files, envie index.html, style.css, app.js e .nojekyll (opcional). Commit changes.
+4. Settings > Pages > Build and deployment > Deploy from a branch > main > / (root) > Save.
+5. Aguarde a publicação. O endereço aparecerá em Settings > Pages.
+Não envie planilhas reais ao repositório. O aplicativo lê os arquivos na memória do navegador e não tem backend, mas carrega a biblioteca XLSX de um CDN externo. Para ambiente corporativo, obtenha autorização e prefira hospedar a biblioteca localmente.
+Faturamento: escolha uma coluna de valor efetivamente faturado ou uma coluna de status e os status que comprovam faturamento. Se não houver informação, não será estimado. Status não confirmados e valores vazios são sinalizados para revisão. Valores são somados por CT-e único; a primeira ocorrência válida é mantida, conflitos vão para revisão. Verifique se os valores de origem são por CT-e, não totais repetidos por viagem. Apenas a primeira aba compatível é processada. Chaves de acesso precisam estar como texto de 44 dígitos. A tela mostra até 500 ocorrências, o Excel inclui todas. A cópia funciona em HTTPS (GitHub Pages). Não há histórico persistente.
